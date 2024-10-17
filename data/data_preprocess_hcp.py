@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
 
     # ------ resample HCP data ------ 
-    for subj_t1_dir in tqdm(subj_list[:10]):
+    for subj_t1_dir in tqdm(subj_list[:]):
         subj_dir = '/'.join(subj_t1_dir.split('/')[:-1]) + '/'
         subj_id = subj_dir.split('/')[-2]
         print(subj_id)

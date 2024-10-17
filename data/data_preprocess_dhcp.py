@@ -204,7 +204,7 @@ if __name__ == "__main__":
         split_dir = save_dir + data_split+'/'
         subj_list = sorted(glob.glob(split_dir+'sub-*'))
 
-        for i in tqdm(range(len(subj_list[:3]))):
+        for i in tqdm(range(len(subj_list[:]))):
             subj_dir = subj_list[i]
             subj_id = subj_dir.split('/')[-1]
             print(orig_dir+subj_id+'/'+subj_id+'_T2w.nii.gz')
