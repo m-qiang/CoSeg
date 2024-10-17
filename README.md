@@ -7,15 +7,11 @@
 
 This is the official PyTorch implementation of the paper: [Weakly Supervised Learning of Cortical Surface Reconstruction from Segmentations](https://papers.miccai.org/miccai-2024/841-Paper1517.html) (MICCAI 2024). We proposed CoSeg, a deep learning-based cortical surface reconstruction framework weakly supervised by pseudo ground truth brain segmentations.
 
-<figure>
-  <img src="./figure/architecture.png">
-  <figcaption><center>The architecture of the Temporal Attention Network (TA-Net).</center></figcaption>
-</figure>
+![CoSeg](./figure/architecture.png)
+The architecture of the Temporal Attention Network (TA-Net).
 
-<figure>
-  <img src="./figure/loss.png">
-  <figcaption><center>(a) The cGM segmentation boundary; (b) The expected pial surface; (c) Bidirectional Chamfer distance between the cGM segmentation boundary and input white surface; (d) The boundary loss, i.e., single-directional Chamfer distance; (e) The inflation loss between the vertex displacement and the normal vector of the input white surface.</center></figcaption>
-</figure>
+![Loss](./figure/loss.png)
+(a) The cGM segmentation boundary; (b) The expected pial surface; (c) Bidirectional Chamfer distance between the cGM segmentation boundary and input white surface; (d) The boundary loss, i.e., single-directional Chamfer distance; (e) The inflation loss between the vertex displacement and the normal vector of the input white surface.
 
 
 ## Installation
